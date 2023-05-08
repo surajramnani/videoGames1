@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct GameDetail: View {
+    @EnvironmentObject var modeldata: modelData
     var games: videoGames
     var body: some View {
+        
+        var gamesIndex: Int{
+            
+                modeldata.games.firstIndex(where: {$0.id == games.id})!
+            }
+      
         VStack{
-            Text(games.name)
-                .font(.custom("American typewriter", size: 25))
+            HStack{
+                Text(games.name)
+                    .font(.custom("American typewriter", size: 25))
+                FavoritesButton(isSet: $modeldata.games[gamesIndex].isFavorite)
+                
+            }
             Image(games.imageName)
                 .resizable()
                 .frame(width: 250, height: 250)
@@ -31,5 +42,7 @@ struct GameDetail: View {
 struct GameDetail_Previews: PreviewProvider {
     static var previews: some View {
         GameDetail(games: modelData().games[7])
+            .environmentObject(modelData())
     }
+        
 }

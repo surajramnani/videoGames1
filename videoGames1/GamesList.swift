@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct GamesList: View {
-    
+    @EnvironmentObject var modeldata: modelData
+    @State private var showFavorites = false
     var body: some View {
+        
+        var filteredGames: [videoGames]{
+            modelData().games.filter { videoGames in
+                (!showFavorites || videoGames.isFavorite)
+            }
+            
+        }
+       
         NavigationStack{
+            Toggle("Show Favorites Only", isOn: $showFavorites)
+                .padding()
             List{
-                ForEach(modelData().games){
+                ForEach(filteredGames){
                     game in
                     NavigationLink{
                         GameDetail(games: game)

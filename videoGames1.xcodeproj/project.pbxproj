@@ -15,6 +15,8 @@
 		4459C3202A091C88006EE96A /* GameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459C31F2A091C88006EE96A /* GameDetail.swift */; };
 		4459C3222A091E92006EE96A /* GameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459C3212A091E92006EE96A /* GameRow.swift */; };
 		4459C3242A091F16006EE96A /* GamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459C3232A091F16006EE96A /* GamesList.swift */; };
+		4459C32C2A092C74006EE96A /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459C32B2A092C74006EE96A /* CategoryItem.swift */; };
+		4459C32E2A092C8C006EE96A /* FavoritesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459C32D2A092C8C006EE96A /* FavoritesButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		4459C31F2A091C88006EE96A /* GameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetail.swift; sourceTree = "<group>"; };
 		4459C3212A091E92006EE96A /* GameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRow.swift; sourceTree = "<group>"; };
 		4459C3232A091F16006EE96A /* GamesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesList.swift; sourceTree = "<group>"; };
+		4459C32B2A092C74006EE96A /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		4459C32D2A092C8C006EE96A /* FavoritesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 		4459C3012A090569006EE96A = {
 			isa = PBXGroup;
 			children = (
+				4459C32B2A092C74006EE96A /* CategoryItem.swift */,
 				4459C30C2A09056A006EE96A /* videoGames1 */,
 				4459C30B2A090569006EE96A /* Products */,
 			);
@@ -59,6 +64,7 @@
 		4459C30C2A09056A006EE96A /* videoGames1 */ = {
 			isa = PBXGroup;
 			children = (
+				4459C32D2A092C8C006EE96A /* FavoritesButton.swift */,
 				4459C30D2A09056A006EE96A /* videoGames1App.swift */,
 				4459C31B2A09057C006EE96A /* videoGames.swift */,
 				4459C3212A091E92006EE96A /* GameRow.swift */,
@@ -152,9 +158,11 @@
 				4459C3202A091C88006EE96A /* GameDetail.swift in Sources */,
 				4459C3102A09056A006EE96A /* ContentView.swift in Sources */,
 				4459C3222A091E92006EE96A /* GameRow.swift in Sources */,
+				4459C32C2A092C74006EE96A /* CategoryItem.swift in Sources */,
 				4459C31C2A09057C006EE96A /* videoGames.swift in Sources */,
 				4459C30E2A09056A006EE96A /* videoGames1App.swift in Sources */,
 				4459C3242A091F16006EE96A /* GamesList.swift in Sources */,
+				4459C32E2A092C8C006EE96A /* FavoritesButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@ struct videoGames: Codable,Hashable,Identifiable{
     let imageName: String
     let logoImage: String
     let platform: String
-    let isFavorite: Bool
+    var isFavorite: Bool
     let isFeatured: Bool
     let Color: color
     enum color: String,CaseIterable,Codable {
