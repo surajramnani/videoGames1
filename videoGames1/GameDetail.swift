@@ -14,6 +14,8 @@ struct GameDetail: View {
             Text(games.name)
                 .font(.custom("American typewriter", size: 25))
             Image(games.imageName)
+                .resizable()
+                .frame(width: 250, height: 250)
             Text(games.platform)
             Divider()
             Text(games.plot)
@@ -23,10 +25,11 @@ struct GameDetail: View {
             
             
         }
+        
     }}
 
 struct GameDetail_Previews: PreviewProvider {
     static var previews: some View {
-        GameDetail(games: modelData().games[1])
+        GameDetail(games: modelData().games[7])
     }
 }

@@ -14,8 +14,10 @@ struct GameRow: View {
             Image(systemName: games.logoImage)
                 .foregroundColor(.blue)
             Text(games.name)
+            
+            }
         }    }
-}
+
 
 struct GameRow_Previews: PreviewProvider {
     static var previews: some View {
